@@ -1,0 +1,36 @@
+name: TestPlugin
+version: 2.4.2
+author: DX2437
+main: org.zapto.dx2437.plugin_test.plugin_test
+description: Plugin for personal benefit and test.
+commands:
+   cmd:
+      description: Give command blocks
+      aliases: [commandblock, commandblocks, command, cmb]
+      usage: /cmd <amount>
+   s:
+      description: Give signs
+      aliases: [sign, signs]
+      usage: /s <amount>
+   ci:
+      description: Clear Inventory
+      aliases: [clearinventory, clearinv]
+      usage: /ci <player>
+   speed:
+      description: Set fly speed, default = 1, max = 10
+      aliases: [flyspeed, fs]
+      usage: /speed <value>
+   se:
+      description: Sign edit
+      aliases: [signedit]
+      usage: /se <line> <value>
+   tra:
+      description: Shortcut for /train removeall
+      usage: /tra
+   tr:
+      description: Shortcut for /train remove
+      usage: /tr
+permission:
+   plugin_test.use:
+      description: Use the plugin
+      default: op
